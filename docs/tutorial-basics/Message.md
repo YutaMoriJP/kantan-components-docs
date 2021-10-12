@@ -33,9 +33,9 @@ const App = () => {
 
 ### Example 1
 
-For the demo, we will take advantage of the `useToggle` hook from the (`kantan-hooks`)[https://kantan-hooks-docs.netlify.app/docs/intro/#installation] library. It will help us manage boolean state with helpful functions. So, let's import the hook and the component from their respective libraries. We will also use another state called `message` to make the content dynamic, i.e. if a successful action happens, then `SUCCESS` is rendered, but if not then `ERROR` is rendered.
+For the demo, we will take advantage of the `useToggle` hook from the [`kantan-hooks`](https://kantan-hooks-docs.netlify.app/docs/intro/#installation) library. It will help us manage a boolean state with helpful functions. So, let's import the hook and the component from their respective libraries. We will also use another state called `message` to make the content dynamic, i.e. if a successful action happens, then `SUCCESS` is rendered, but if not then `ERROR` is rendered.
 
-Note that you have the power to apply your own styling to the `Message` component. The example shows one approach you could take.
+Note that you have the power to apply your own styling to the `Message` component. The example shows one approach you could take. Feel free to use `Sass`, `styled-components`, `Css Modules`, or whatever your preferrred way of styling is.
 
 [CodeSandbox](https://f0524.csb.app/message)
 
