@@ -18,7 +18,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Get Started with kantan-components
+            Get Started
           </Link>
         </div>
       </div>
