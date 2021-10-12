@@ -22,7 +22,7 @@ const App = () => {
 
 ### Props
 
-| State              | Type                           | Explanation                                                                                                                                                                                                                                       |
+| Prop               | Type                           | Explanation                                                                                                                                                                                                                                       |
 | ------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ` onClose`         | `Function `                    | A function that must unmount the `Message` component.                                                                                                                                                                                             |
 | ` ms`              | `Number `                      | The `ms` prop needs to be represented in milliseconds. It controls when the `Message` component will be unmounted. If you pass the prop `ms={2000}`, then the component will be unmounted after 2 seconds.                                        |
