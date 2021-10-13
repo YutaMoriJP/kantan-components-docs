@@ -63,14 +63,14 @@ const App = () => {
 
 For this example, we will use the `useToggle` hook from `kantan-hooks` to more easily manage the `boolean` state.
 
-Unlike the first example, the Modal is rendered upon page load, or more specifically, when the component has rendered, and the `useEffect` callback runs. You might have seen it on websites that ask you to subscribe to their news letter.
+Unlike the first example, the Modal is rendered upon page load, or more specifically, when the `App` has mounted, and the `useEffect` callback runs. You might have seen it on websites that ask you to subscribe to their news letter.
 
 ```jsx
 import { useState, useEffect } from "react";
 import { useToggle } from "kantan-hooks";
 import { Modal } from "kantan-components";
 
-const App2 = () => {
+const App = () => {
   const { open, onOpen, onClose } = useToggle(false);
 
   useEffect(() => {
