@@ -5,8 +5,6 @@ The `Modal` component helps you to intergrate a Modal UI to your app. For it wor
 ## The Syntax
 
 ```jsx
-import { Modal } from "kantan-components";
-//redacted for readability, see example below.
 {
   open ? (
     <Modal handleClose={onClose}>

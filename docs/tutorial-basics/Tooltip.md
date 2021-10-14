@@ -11,11 +11,9 @@ The `Tooltip` component is an `inline` element. If you want it to behave like a 
 ## The Syntax
 
 ```jsx
-import { Tooltip } from "kantan-components";
-//redacted for readability, see example below.
 <Tooltip text="It might be a good idea to provide more information.">
   <strong>HOVER OVER ME</strong>
-</Tooltip>;
+</Tooltip>
 ```
 
 ### Props
