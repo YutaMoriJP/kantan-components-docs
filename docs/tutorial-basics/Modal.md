@@ -1,6 +1,6 @@
 # Modal
 
-The `Modal` component helps you to intergrate a Modal UI to your app. For it work, you must manage a `boolean` state that conditionally renders the component. It could look like `{open ? <Modal>HI</Modal> : null}.
+The `Modal` component helps you to intergrate a Modal UI to your app. For it work, you must manage a `boolean` state that conditionally renders the component. It could look like `{open ? <Modal>HI</Modal> : null}`.
 
 ## The Syntax
 
