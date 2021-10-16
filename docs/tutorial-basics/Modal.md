@@ -1,17 +1,20 @@
 # Modal
 
-The `Modal` component helps you to intergrate a Modal UI to your app. For it work, you must manage a `boolean` state that conditionally renders the component. It could look like `{open ? <Modal>HI</Modal> : null}`.
+The `Modal` component helps you to intergrate a Modal UI to your app. For it to work, you must manage a `boolean` state that conditionally renders the component. It could look like `{open ? <Modal>HI</Modal> : null}`. You could also use a `Logical AND` operator, but you might want to read [this](https://kentcdodds.com/blog/use-ternaries-rather-than-and-and-in-jsx) on why a ternary might be a better option.
 
 ## The Syntax
 
 ```jsx
-{
-  open ? (
-    <Modal handleClose={onClose}>
-      <h1>Hello, World!</h1>
-    </Modal>
-  ) : null;
-}
+const [open, setOpen] = useState(false);
+return (
+  <div>
+    {open ? (
+      <Modal handleClose={onClose}>
+        <h1>Hello, World!</h1>
+      </Modal>
+    ) : null}
+  </div>
+);
 ```
 
 ### Props
@@ -61,7 +64,9 @@ const App = () => {
 
 For this example, we will use the `useToggle` hook from `kantan-hooks` to more easily manage the `boolean` state.
 
-Unlike the first example, the Modal is rendered upon page load, or more specifically, when the `App` has mounted, and the `useEffect` callback runs. You might have seen it on websites that ask you to subscribe to their news letter.
+Unlike the first example, the Modal is rendered upon page load, or more specifically, when `App` has mounted, and the `useEffect` callback runs. You might have seen something like this on websites that ask you to subscribe to their news letter.
+
+[CodeSandbox](https://f0524.csb.app/modal)
 
 ```jsx
 import { useState, useEffect } from "react";
@@ -79,6 +84,7 @@ const App = () => {
       {open ? (
         <Modal handleClose={onClose} color="rgb(204, 204, 204)">
           {/* apply custom style here*/}
+          {/*Note that the color prop and the background color of your own CSS should match*/}
           <article className="box-space">
             <h1>Newsletter</h1>
             <p>Please consider subscribing to our newsletter.</p>

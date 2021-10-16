@@ -29,7 +29,7 @@ The `Tooltip` component is an `inline` element. If you want it to behave like a 
 
 ### Example 1
 
-Passing the positional props like `bottom`, `top`, `left` or `right` will position the tooltip at the desired place. However, if you don't pass the position, then the default position will be `bottom`.
+Passing the positional props like `bottom`, `top`, `left` or `right` will position the tooltip at the desired place. However, if you don't use the position prop, then the default position will be `bottom`.
 
 [CodeSandbox](https://f0524.csb.app/tooltip)
 
@@ -70,6 +70,8 @@ Install `react-icons` as below:
 ```shell
 npm install react-icons
 ```
+
+[CodeSandbox](https://f0524.csb.app/tooltip)
 
 ```jsx title/App.js
 import { Tooltip } from "kantan-components";

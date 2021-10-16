@@ -1,6 +1,6 @@
 # Clipboard
 
-The `Clipboard` component helps you to easily copy a value to the user's clipboard.
+The `Clipboard` component helps you to easily copy a value to the user's clipboard. Simply pass a string value to the `toBeCopied` prop and it will be copied to the user's clipboard **after** a click event is fired.
 
 ## The Syntax
 
