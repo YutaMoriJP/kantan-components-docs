@@ -4,7 +4,7 @@ The `Download` component helps you to generate a download link by either fetchin
 
 :::note
 
-To make sense of which text is displayed at which stage, the following process might be useful. The process of how a download link is generated is managed by the internal `status` state, which follow these steps `idle` -> `pending` -> `resolved/rejected`. So if your initial `textContent` state is `Generate link` then it will be in sync with the `idle` status, and if you pass `Loading...` to `pending`, and `Download now` to `resolved`, you would have a logical description that the user can follow.
+To make sense of which text is displayed at which stage, the following explanation might be useful. The process of how a download link is generated is managed by the internal `status` state, which follow these steps `idle` -> `pending` -> `resolved/rejected`. So if your initial `textContent` state is `Generate link` then it will be in sync with the `idle` status, and if you pass `Loading...` to `pending`, and `Download now` to `resolved`, you would have a logical description that the user can follow.
 :::
 
 ## The Syntax
