@@ -102,7 +102,7 @@ export default function App() {
 
 ### Example 3
 
-In this example, we pass an image url to allow the user to download the imported image.
+In this example, we pass an the imported image to `url` to allow the user to download the image.
 
 [CodeSandbox](https://f0524.csb.app/download)
 
